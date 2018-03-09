@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, td, th {
+	border: 2px dotted pink;
+	border-collapse: collapse;
+	font-size: 24px;
+}
+td, th {
+	padding: 5px;
+}	
+caption {
+	caption-side: bottom;
+}
+tr:nth-child(even) {
+	background-color: #EEE;}
+tr:nth-child(odd) {
+	background-color: #FFF;}
+p:first-child {
+	background-color: yellow;}
+</style>
+</head>
+<body>
+	<p>First child of parent(body)</p>	
+	<table>
+	<thead>
+		<tr>
+			<th>First Name</th>   <!-- use <th> to specify table header -->
+			<th colspan="2">Last Name </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</tbody>
+	</table>
+	<br>
+	
+	<table>
+		<caption>Details</caption>
+		<tr>
+			<th>First Name</th>   <!-- use <th> to specify table header -->
+			<th>Last Name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td rowspan="2">Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+		</tr>
+	</table>
+	
+	<p>First child of parent(body)</p>
+	<h1>Pseudo-classes example</h1>
+	<p>Not first child of parent(h1)</p>
+	<div>
+		<p>First child of (div)</p>
+		<p>Not first child of (div)</p>
+</body>
+</html>
